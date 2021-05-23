@@ -28,12 +28,18 @@
 <div class="wrapper">
 <header class="top-movie">
   <div id="top-area">
-    <video src="images/THEAR INC INTRODUCTION.mp4" autoplay muted playsinline loop></video>
 
-  <p class="upper-text">Thear.Inc</p>
+   <video src="images/THEAR INC INTRODUCTION.mp4" autoplay muted playsinline loop></video>
+
+   <p class="upper-text">Thear Inc.</p>
+   <a href="sidebar.html"><div class="openbtn"><span></span><span></span></div></a>
+
+  </div>
+
   <p class="lower-text">TEXTTEXTTEXT<br>TEXTTEXTTEXT</P>
 <div class="btn-menu js-menu-btn"><span></span></div>
-</div>
+
+
 </header>
 
 
@@ -43,15 +49,18 @@
   <div class="inner first-inner">
 		<p class="projects">Projects</p>
     <div class="grid">
-      <a href="project1.html">
+
+      <a href="project1.html" id="project1">
       <div class="item-box">
-				<img class="projects-img" src="images/projects1.jpg" width="506px" height="345px" alt="DISCOVERED">
+				<img class="projects-img" src="images/projects1.jpg" width="506px" height="345px" alt="DISCOVERED" id="project1-rest">
+        <img class="projects-img" src="images/projects1_active.jpg" alt="DISCOVERED" id="project1-active">
 				<p class="projects-first">⁰⁰SEENOWTOKYO</p>
         <p class="projects-second">2017年よりTHEARが運営するオウンドファッションECサイト。
           <br>国内を中心に130以上の気鋭ブランドが集う唯一無二のプラットフォームです。
         </p>
       </div>
-    </a>
+      </a>
+
     <a href="project1.html">
       <div class="item-box">
 				<img class="projects-img" src="images/projects2.jpg" alt="DISCOVERED">
@@ -207,8 +216,8 @@
       </div><!--inner-->
 
   <section id="sec03">
-		<div class="inner form-inner">
-			<p class="projects">Contact</p>
+    <div class="inner form-inner">
+      <p class="projects">Contact</p>
       <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfYGEpYSsaxAkzaib_txplIwJoB3GvCoEVm-7sx3TuqupID4g/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
      <div class="contact-form">
        <p class="form-title">Contact</p>
@@ -224,7 +233,7 @@
       <script type="text/javascript">var submitted = false;</script>
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='index.html';}"></iframe>
   </section>
-</div>
+
 
 <!-- // ITEM  -->
 <footer id="topfooter">
@@ -236,6 +245,10 @@
 <p class="copyright">THEAR INC. All rights reserved 2021</p>
 </footer>
 
+
+<!--jQuery & JavaScript 設定-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="sidebar.js"></script>
 
 </body>
 </html>
