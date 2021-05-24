@@ -1975,18 +1975,21 @@ video {
 /*-------------------------------------------*/
 
 
+.h-100{
+  min-height: 100vh;
+}
 
 div.footer-wrapper{
-   min-height: 100vh;
-   position: relative;/*←相対位置*/
-   padding-bottom: 150px;/*←footerの高さ*/
-   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 footer.sidebarfooter {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
 }
+
+
 
 .menu-top{
   height: 150px;
@@ -2010,56 +2013,6 @@ div.global-nav {
 
 
 
-/*----------------
-div.global-nav {
-    margin-bottom: clamp(100px, 300px);
-  }
------------*/
-
-
-@media only screen and (min-height: 667px) {
-div.global-nav {
-    margin-bottom: 38%;
-  }
-}
-
-/*----------------
-@media only screen and (min-height: 736px) {
-div.global-nav {
-    margin-bottom: 45%;
-  }
-}
------------*/
-
-/*-----iPhone 12 mini---*/
-/*-----
-@media only screen and (min-height: 812px) {
-div.global-nav {
-    margin-bottom: 77.6%;
-  }
-}
------------*/
-
-/*-----iPhone 12/ 12 Pro
-@media only screen and (min-height: 844px) {
-div.global-nav {
-    margin-bottom: 87%;
-  }
-}
-----*/
-
-/*-----iPhone 12 Pro Max----*/
-/*-----
-@media only screen and (min-height: 926px) {
-div.global-nav {
-    margin-bottom: 87.5%;
-  }
-}
------------*/
-
-
-
-
 .list-menu a{
   font-size: 3rem;
   text-decoration: none;
@@ -2079,19 +2032,4 @@ div.global-nav {
   font-weight: 400;
   font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
